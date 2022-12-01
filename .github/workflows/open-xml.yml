@@ -6,7 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Gets feed XML
     steps:
-      uses: mavrosxristoforos/get-xml-info@1.0
+      -name: get xml
+        uses: mavrosxristoforos/get-xml-info@1.0
         with:
           xml-file: 'https://bobbiejwilson.github.io/feed.xml'
           xpath: '//entry'
