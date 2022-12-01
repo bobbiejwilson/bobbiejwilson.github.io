@@ -1,8 +1,13 @@
 name: Retrieve XML
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+
 jobs:
-  Open-Feed:
+
+  get-xml-info:
     runs-on: ubuntu-latest
     name: Gets feed XML
     steps:
