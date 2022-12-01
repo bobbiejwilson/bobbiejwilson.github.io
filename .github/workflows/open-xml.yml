@@ -6,12 +6,12 @@ on:
       - master
 
 jobs:
-
-  get-xml-info:
+  build:
+    needs: deploy
     runs-on: ubuntu-latest
-    name: Gets feed XML
     steps:
-      -name: get xml
+    - name: Get XML
+        id: getxml
         uses: mavrosxristoforos/get-xml-info@1.0
         with:
           xml-file: 'https://bobbiejwilson.github.io/feed.xml'
