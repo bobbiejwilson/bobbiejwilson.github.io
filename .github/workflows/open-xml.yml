@@ -1,0 +1,12 @@
+name: Retrieve XML
+
+on: [push]
+jobs:
+  Open-Feed:
+    runs-on: ubuntu-latest
+    name: Gets feed XML
+    steps:
+      uses: mavrosxristoforos/get-xml-info@1.0
+        with:
+          xml-file: 'https://bobbiejwilson.github.io/feed.xml'
+          xpath: '//entry'
