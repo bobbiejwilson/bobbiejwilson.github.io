@@ -3,7 +3,7 @@ name: Retrieve XML
 on:
   push:
     branches:
-      - master
+    - master
 
 jobs:
   build:
@@ -15,4 +15,4 @@ jobs:
         uses: mavrosxristoforos/get-xml-info@1.0
         with:
           xml-file: 'https://bobbiejwilson.github.io/feed.xml'
-          xpath: '//entry'
+          xpath: '/feed/entry[1]'
