@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get XML
-        uses: mavrosxristoforos/get-xml-info@1.0
-          with:
-            xml-file: 'feed.xml'
-            xpath: '/feed/entry[1]'
+      uses: mavrosxristoforos/get-xml-info@1.0
+      with:
+        xml-file: 'feed.xml'
+        xpath: '/feed/entry[1]'
