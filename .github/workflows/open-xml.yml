@@ -14,5 +14,5 @@ jobs:
         id: getxml
         uses: mavrosxristoforos/get-xml-info@1.0
         with:
-          xml-file: 'https://bobbiejwilson.github.io/feed.xml'
+          xml-file: 'feed.xml'
           xpath: '/feed/entry[1]'
